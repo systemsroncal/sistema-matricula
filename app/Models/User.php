@@ -6,7 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
+use ExcelExport;
 class User extends \TCG\Voyager\Models\User
 {
     use HasFactory, Notifiable;
@@ -40,4 +40,18 @@ class User extends \TCG\Voyager\Models\User
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function setExportable()
+{
+  //list column of table which you want to export
+  //type 1 ["key1", "key2"]
+  //type 2 ["key1" => "New Name", "key2" => "New Name"]
+  //or with closure ["key1" => [ "name" => "New Name", "value" => function($value, $model){ return $value } ]]
+  //you all free to combine three options
+
+  //example
+  return array(
+    ["name", "email"]
+  );
+}
 }

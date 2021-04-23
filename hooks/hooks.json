@@ -1,1 +1,11 @@
-{}
+{
+    "last_remote_check": 1619155873,
+    "hooks": {
+        "tu6ge/voyager-excel": {
+            "name": "tu6ge/voyager-excel",
+            "description": "voyager excel export hook",
+            "version": "v0.1.2",
+            "enabled": true
+        }
+    }
+}

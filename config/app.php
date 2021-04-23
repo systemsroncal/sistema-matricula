@@ -163,6 +163,8 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         /*MANUAL IMPORT Service Providers CODE */
         Maatwebsite\Excel\ExcelServiceProvider::class,
+        Larapack\Hooks\HooksServiceProvider::class,
+        Larapack\VoyagerHooks\VoyagerHooksServiceProvider::class,
         /*END MANUAL IMPORT Service Providers CODE */
         /*
          * Package Service Providers...

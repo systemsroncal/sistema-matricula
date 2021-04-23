@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfa9b12938386c4c7c75dfc07ff7f7b8",
+    "content-hash": "728297d69b8c1fd0d38d0eda2223dad5",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -119,6 +119,68 @@
                 "stack"
             ],
             "time": "2021-03-11T06:42:03+00:00"
+        },
+        {
+            "name": "barryvdh/laravel-dompdf",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-dompdf.git",
+                "reference": "5b99e1f94157d74e450f4c97e8444fcaffa2144b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-dompdf/zipball/5b99e1f94157d74e450f4c97e8444fcaffa2144b",
+                "reference": "5b99e1f94157d74e450f4c97e8444fcaffa2144b",
+                "shasum": ""
+            },
+            "require": {
+                "dompdf/dompdf": "^1",
+                "illuminate/support": "^5.5|^6|^7|^8",
+                "php": "^7.1 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\DomPDF\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "PDF": "Barryvdh\\DomPDF\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\DomPDF\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "A DOMPDF Wrapper for Laravel",
+            "keywords": [
+                "dompdf",
+                "laravel",
+                "pdf"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-12-27T12:05:53+00:00"
         },
         {
             "name": "brick/math",
@@ -1494,6 +1556,60 @@
                 "url"
             ],
             "time": "2021-03-21T16:25:00+00:00"
+        },
+        {
+            "name": "ibrahimtelman/voyager-excel-export",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ibrahimtelman/voyager-excel-export.git",
+                "reference": "666f05610080a3131f89c7bdf124464b091f2bd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ibrahimtelman/voyager-excel-export/zipball/666f05610080a3131f89c7bdf124464b091f2bd6",
+                "reference": "666f05610080a3131f89c7bdf124464b091f2bd6",
+                "shasum": ""
+            },
+            "require": {
+                "larapack/hooks": "^1.0.5",
+                "maatwebsite/excel": "^3.1"
+            },
+            "require-dev": {
+                "laravel/support": "^5.5 || ^6"
+            },
+            "type": "library",
+            "extra": {
+                "hook": {
+                    "providers": [
+                        "VoyagerExcelExport\\VoyagerExcelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "VoyagerExcelExport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ibrahimtelman",
+                    "email": "ibrahimtlmn@gmail.com"
+                },
+                {
+                    "name": "tu6ge",
+                    "email": "772364230@qq.com"
+                }
+            ],
+            "description": "voyager excel export hook based voyager-excel package",
+            "support": {
+                "source": "https://github.com/ibrahimtelman/voyager-excel-export/tree/1.0.1"
+            },
+            "time": "2020-09-08T08:14:14+00:00"
         },
         {
             "name": "intervention/image",
@@ -5809,6 +5925,57 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
+            "name": "tu6ge/voyager-excel",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tu6ge/voyager-excel.git",
+                "reference": "2a630df50c3fbf00fcd66c3bfdac7f86453abf99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tu6ge/voyager-excel/zipball/2a630df50c3fbf00fcd66c3bfdac7f86453abf99",
+                "reference": "2a630df50c3fbf00fcd66c3bfdac7f86453abf99",
+                "shasum": ""
+            },
+            "require": {
+                "larapack/hooks": "^1.0.5",
+                "maatwebsite/excel": "^3.1"
+            },
+            "require-dev": {
+                "laravel/support": "^5.5 || ^6"
+            },
+            "type": "library",
+            "extra": {
+                "hook": {
+                    "providers": [
+                        "VoyagerExcel\\VoyagerExcelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "VoyagerExcel\\": "src/"
+                }
+            },
+            "notification-url": "http://satisfy.xiaoqiezi.top/downloads",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tu6ge",
+                    "email": "772364230@qq.com"
+                }
+            ],
+            "description": "voyager excel export hook",
+            "support": {
+                "source": "https://github.com/tu6ge/voyager-excel/tree/v0.1.2",
+                "issues": "https://github.com/tu6ge/voyager-excel/issues"
+            },
+            "time": "2020-02-10T09:27:57+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.3.0",
             "source": {
@@ -8137,5 +8304,6 @@
     "platform": {
         "php": "^7.3|^8.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

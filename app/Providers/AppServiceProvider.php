@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Larapack\Hooks\Hooks;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->resolving(Hooks::class, function ($api, $app) {
+            $this->app[Hooks::class]::setRemote('http://satisfy.xiaoqiezi.top');
+            $this->app[Hooks::class]->readJsonFile();
+        });
     }
 
     /**
