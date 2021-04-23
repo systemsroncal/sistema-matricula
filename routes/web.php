@@ -12,3 +12,8 @@ Route::get('/', function () {
     return (new UsersExport)->forDate(request('year'))->download('users.xlsx');
     
 });
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
